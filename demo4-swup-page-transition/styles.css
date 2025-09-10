@@ -1,0 +1,8 @@
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: #0ea5e9;
+  transform: translateY(100%);
+  z-index: 50;
+}
+.transition-fade { opacity: 1; will-change: opacity; }
