@@ -2,7 +2,8 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import kbData from './kb.json'
 import { rankAnswers } from './fuzzy'
 
-const FN_PATH = '/api/chat' // mapped to Netlify function via redirect
+const FN_PATH = '/api/chat'
+const isHy = (s) => /[\u0531-\u058F]/.test(s); // Armenian letters
 
 export default function ChatWidget(){
   const [open, setOpen] = useState(false)
@@ -26,7 +27,11 @@ export default function ChatWidget(){
       const res = await fetch(FN_PATH, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ messages: [...messages, userMsg], kb: getMergedFacts() })
+        body: JSON.stringify({
+          messages: [...messages, userMsg],
+          kb: getMergedFacts(),
+          langHint: isHy(text) ? 'hy' : 'en'
+        })
       })
       if(!res.ok) throw new Error('offline')
       const data = await res.json()
