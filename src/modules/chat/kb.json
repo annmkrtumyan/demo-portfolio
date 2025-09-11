@@ -1,26 +1,130 @@
 [
   {
     "question": "Who is Anna Mkrtumyan?",
-    "answer": "A motion‑first front‑end engineer focused on GSAP/ScrollTrigger, Tailwind, and accessible animation systems."
+    "answer": "A front‑end software engineer based in Yerevan, Armenia, with experience across Angular (12–15+), React and TypeScript, focused on modular UI engineering."
   },
   {
-    "question": "What are Anna's top skills?",
-    "answer": "GSAP, ScrollTrigger, Tailwind CSS, React (Vite), Swup page transitions, and building accessible micro‑interactions that respect prefers‑reduced‑motion."
+    "question": "What is Anna's current role?",
+    "answer": "Software Engineer at Datanect (Dec 2021 – present), developing complex front‑end interfaces and leading several UI/UX refactoring initiatives."
   },
   {
-    "question": "What demos has Anna built?",
-    "answer": "Hero parallax with ScrollTrigger, pinned section transitions with snap, UI micro‑interactions (hover lift, menu timeline, button ripple), and Swup page overlay transitions."
+    "question": "Which cloud and AI tools has Anna integrated?",
+    "answer": "AWS Cognito, Lambda, CloudWatch, CodeBuild, Amazon Connect Streams, Amazon Chat.js, and AWS Bedrock for conversational AI."
   },
   {
-    "question": "Does Anna respect accessibility?",
-    "answer": "Yes. Animations fallback for reduced‑motion users; focus states and keyboard flows are designed into components."
+    "question": "What notable custom component did Anna build?",
+    "answer": "A custom JavaScript plugin for real‑time call events via Amazon Connect Streams."
   },
   {
-    "question": "Time zone and response time?",
-    "answer": "Asia/Yerevan (UTC+4). Usually replies within 24 hours."
+    "question": "Has Anna worked with conversational AI?",
+    "answer": "Yes — integrated conversational AI features using AWS Bedrock and Amazon Chat.js."
   },
   {
-    "question": "What tools does Anna like?",
-    "answer": "GSAP suite, Tailwind, Lottie/SVG, Barba/Swup for transitions, and Netlify for hosting."
+    "question": "Which JS frameworks and libraries does Anna use?",
+    "answer": "Angular (12–15+), TypeScript, NgRx, RxJS, React, Ionic, BackboneJS, jQuery; plus HTML5, CSS3 (Sass, Less)."
+  },
+  {
+    "question": "Which design and collaboration tools does Anna use?",
+    "answer": "Figma, Adobe XD, Adobe Photoshop/Illustrator, Jira, Trello, Bitbucket, Git."
+  },
+  {
+    "question": "What platform did Anna work on at Softconstruct?",
+    "answer": "Spring BME iGaming Management Platform, building modular responsive dashboards and product configuration flows."
+  },
+  {
+    "question": "What 3D or visualization experience does Anna have?",
+    "answer": "Built interactive 3D models with Three.js for air handling units, including rotation, inspection and measurement indicators."
+  },
+  {
+    "question": "Has Anna worked with CI/CD?",
+    "answer": "Yes — set up and worked with AWS CodeBuild pipelines and related services."
+  },
+  {
+    "question": "Where is Anna located?",
+    "answer": "Yerevan, Armenia."
+  },
+  {
+    "question": "What is Anna's education?",
+    "answer": "B.Sc. in Informatics and Applied Mathematics from Yerevan State University (2012–2016); additional programming course at ArmSoft (2013)."
+  },
+  {
+    "question": "What were some university projects?",
+    "answer": "OpenCV face/smile detection in C++; Dijkstra’s algorithm in Qt."
+  },
+  {
+    "question": "What languages does Anna speak?",
+    "answer": "Armenian (native), Russian (C2), English (B1–B2)."
+  },
+  {
+    "question": "How to contact Anna?",
+    "answer": "Email: annmkrtumyan@gmail.com; LinkedIn: linkedin.com/in/anna-mkrtumyan-717453159"
+  },
+  {
+    "question": "Which companies has Anna worked at?",
+    "answer": "Datanect (2021–present), Softconstruct (2018–2021), Kinetix (2016–2018, 2023 part‑time), Webassistant (2015–2016)."
+  },
+  {
+    "question": "Ով է Աննա Մկրտումյանը?",
+    "answer": "Front‑end ծրագրավորող Երևանից՝ փորձով Angular (12–15+), React, TypeScript տեխնոլոգիաներով, կենտրոնացած մոդուլային UI ինժեներիայի վրա."
+  },
+  {
+    "question": "Աննայի ներկայիս աշխատանքը ո՞րն է:",
+    "answer": "Software Engineer Datanect ընկերությունում (2021 դեկտեմբերից՝ մինչ այժմ). Զարգացնում է բարդ front‑end ինտերֆեյսներ և ղեկավարում UI/UX refactor-ներ."
+  },
+  {
+    "question": "Աննան ինչ cloud/AI ծառայություններ է ինտեգրեցրել?",
+    "answer": "AWS Cognito, Lambda, CloudWatch, CodeBuild, Amazon Connect Streams, Amazon Chat.js, ինչպես նաև AWS Bedrock՝ conversational AI-ի համար."
+  },
+  {
+    "question": "Ինչ custom լուծում է պատրաստել Աննան Amazon Connect-ի համար?",
+    "answer": "Սեփական JavaScript plugin՝ իրական ժամանակում call-ի իրադարձությունները ընթերցելու համար (Amazon Connect Streams)."
+  },
+  {
+    "question": "Ունե՞ցել է Աննան conversational AI փորձ:",
+    "answer": "Այո, ինտեգրել է AWS Bedrock‑ով և Amazon Chat.js‑ով."
+  },
+  {
+    "question": "Որ framework-ներով է աշխատում Աննան?",
+    "answer": "Angular, TypeScript, NgRx, RxJS, React, Ionic, BackboneJS, jQuery, ինչպես նաև HTML5, CSS3 (Sass, Less)."
+  },
+  {
+    "question": "Ի՞նչ դիզայն/համագործակցության գործիքներ է օգտագործում Աննան:",
+    "answer": "Figma, Adobe XD/Photoshop/Illustrator, Jira, Trello, Bitbucket, Git."
+  },
+  {
+    "question": "Ի՞նչ նախագծի վրա է աշխատել Softconstruct-ում:",
+    "answer": "Spring BME iGaming Management Platform — օպերատորների dashboard-ներ և կոնֆիգուրացիոն հոսքեր."
+  },
+  {
+    "question": "Արդյո՞ք ունի 3D / Three.js փորձ:",
+    "answer": "Այո — Three.js‑ով կառուցել է ինտերակտիվ 3D մոդելներ օդափոխիչ սարքերի համար՝ պտտում, զննում, չափումների ցուցիչներ."
+  },
+  {
+    "question": "Արդյո՞ք աշխատել է CI/CD-ով:",
+    "answer": "Այո — AWS CodeBuild և հարակից ծառայություններ."
+  },
+  {
+    "question": "Որտե՞ղ է բնակվում:",
+    "answer": "Երևան, Հայաստան."
+  },
+  {
+    "question": "Կրթությունն ի՞նչ է:",
+    "answer": "Բակալավր՝ Ինֆորմատիկա և կիրառական մաթեմատիկա, ԵՊՀ (2012–2016); «ArmSoft» ծրագրավորման դասընթաց (2013)."
+  },
+  {
+    "question": "Ի՞նչ էին համալսարանական նախագծերը:",
+    "answer": "OpenCV՝ դեմքի/ժպիտի հայտնաբերում (C++), և Դեյկստրա ալգորիթմ՝ Qt-ով."
+  },
+  {
+    "question": "Ի՞նչ լեզուներ է տիրապետում:",
+    "answer": "Հայերեն (մայրենի), Ռուսերեն (C2), Անգլերեն (B1–B2)."
+  },
+  {
+    "question": "Ինչպե՞ս կարող եմ կապ հաստատել Աննայի հետ:",
+    "answer": "Email — annmkrtumyan@gmail.com, LinkedIn — linkedin.com/in/anna-mkrtumyan-717453159"
+  },
+  {
+    "question": "Որ ընկերություններում է աշխատել Աննան:",
+    "answer": "Datanect, Softconstruct, Kinetix, Webassistant (նշված տարիներով)."
   }
 ]
