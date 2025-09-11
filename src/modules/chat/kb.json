@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Who is Anna Mkrtumyan?",
+    "answer": "A motion‑first front‑end engineer focused on GSAP/ScrollTrigger, Tailwind, and accessible animation systems."
+  },
+  {
+    "question": "What are Anna's top skills?",
+    "answer": "GSAP, ScrollTrigger, Tailwind CSS, React (Vite), Swup page transitions, and building accessible micro‑interactions that respect prefers‑reduced‑motion."
+  },
+  {
+    "question": "What demos has Anna built?",
+    "answer": "Hero parallax with ScrollTrigger, pinned section transitions with snap, UI micro‑interactions (hover lift, menu timeline, button ripple), and Swup page overlay transitions."
+  },
+  {
+    "question": "Does Anna respect accessibility?",
+    "answer": "Yes. Animations fallback for reduced‑motion users; focus states and keyboard flows are designed into components."
+  },
+  {
+    "question": "Time zone and response time?",
+    "answer": "Asia/Yerevan (UTC+4). Usually replies within 24 hours."
+  },
+  {
+    "question": "What tools does Anna like?",
+    "answer": "GSAP suite, Tailwind, Lottie/SVG, Barba/Swup for transitions, and Netlify for hosting."
+  }
+]

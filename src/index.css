@@ -1,0 +1,11 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+
+:root { color-scheme: dark; }
+.grad {
+  background:
+    radial-gradient(600px 300px at 10% -10%, rgba(14,165,233,.25), transparent 60%),
+    radial-gradient(600px 300px at 110% 10%, rgba(99,102,241,.22), transparent 60%);
+}
+.glass { background: rgba(255,255,255,.06); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+.link { @apply underline decoration-slate-500/60 hover:decoration-slate-100; }
+a:focus-visible, button:focus-visible { outline: 2px solid #38bdf8; outline-offset: 2px; }

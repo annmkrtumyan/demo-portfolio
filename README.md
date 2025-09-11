@@ -1,7 +1,20 @@
-# GSAP + Tailwind + (Swup) Demos
+# Anna Portfolio + AI Chat (Vite + Tailwind + GSAP)
 
-## Demos
-1) **demo1-hero-parallax** — ScrollTrigger parallax hero with reduced-motion support.
-2) **demo2-section-transitions** — Pinned sections, snap scrolling, transform-only reveals.
-3) **demo3-ui-microinteractions** — Menu timeline, hover/focus lift, CTA ripple.
-4) **demo4-swup-page-transition** — Two-page site using Swup + GSAP overlay transitions.
+A production‑style portfolio with a built‑in AI chat widget. The chat works **offline** using a local knowledge base, and can be upgraded to a **live model** via a Netlify Function using OpenAI's **Responses API**.
+
+## Quick start (local)
+```bash
+npm i
+npm run dev
+# open http://localhost:5173
+```
+
+## Tech
+- React + Vite + Tailwind
+- GSAP for motion (prefers‑reduced‑motion respected)
+- Netlify Functions for server API
+- OpenAI Node SDK (Responses API)
+
+
+## Credits & License
+© 2025 Anna Mkrtumyan — MIT

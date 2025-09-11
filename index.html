@@ -1,115 +1,14 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anna — GSAP Motion Demos</title>
-  <meta name="description" content="GSAP + Tailwind + Swup motion demos by Anna Mkrtumyan — scroll interactions, page transitions, and micro-interactions with accessibility & performance in mind." />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <style>
-    .grad {
-      background: radial-gradient(1200px 600px at 10% -10%, rgba(14,165,233,.25), transparent 60%),
-                  radial-gradient(1200px 600px at 110% 10%, rgba(99,102,241,.22), transparent 60%),
-                  linear-gradient(180deg, #0b1220, #0b1220);
-    }
-    .glass { background: rgba(255,255,255,.06); backdrop-filter: blur(10px); }
-  </style>
-</head>
-<body class="min-h-screen grad text-slate-100">
-  <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
-    <a class="flex items-center gap-3" href="#">
-      <span class="inline-grid place-items-center w-9 h-9 rounded-full bg-sky-500/20 border border-sky-400/30 font-bold">AM</span>
-      <span class="font-semibold tracking-wide">Anna Mkrtumyan</span>
-    </a>
-    <nav class="hidden sm:flex items-center gap-6 text-sm text-slate-300">
-      <a class="hover:text-white" href="https://greensock.com/gsap/" target="_blank" rel="noreferrer">GSAP</a>
-      <a class="hover:text-white" href="https://tailwindcss.com/" target="_blank" rel="noreferrer">Tailwind</a>
-      <a class="hover:text-white" href="https://swup.js.org/" target="_blank" rel="noreferrer">Swup</a>
-    </nav>
-  </header>
-
-  <section class="relative overflow-hidden">
-    <div class="max-w-6xl mx-auto px-6 pt-6 pb-12 md:pt-10 md:pb-20">
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 class="hero-title text-4xl md:text-6xl font-extrabold leading-tight">
-            Motion-first front-ends.<br />
-            Built for <span class="text-sky-400">60fps</span> & accessibility.
-          </h1>
-          <p class="hero-sub mt-4 text-slate-300 max-w-xl">
-            Small production-style demos using <strong>GSAP</strong>, <strong>Tailwind</strong>, and <strong>Swup</strong>: scroll-driven scenes,
-            micro-interactions, and page transitions — all respecting <code>prefers-reduced-motion</code>.
-          </p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#demos" class="px-5 py-3 rounded-2xl bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold transition">Explore demos</a>
-            <a href="https://greensock.com/scrolltrigger/" target="_blank" rel="noreferrer" class="px-5 py-3 rounded-2xl glass border border-white/10 hover:border-white/20">ScrollTrigger</a>
-            <a href="https://tailwindcss.com/docs" target="_blank" rel="noreferrer" class="px-5 py-3 rounded-2xl glass border border-white/10 hover:border-white/20">Tailwind</a>
-          </div>
-        </div>
-        <div class="relative">
-          <div class="h-64 md:h-80 rounded-[28px] glass border border-white/10 shadow-2xl p-1">
-            <div class="h-full w-full rounded-[24px] bg-gradient-to-br from-sky-500/20 via-fuchsia-500/10 to-indigo-500/20"></div>
-          </div>
-          <div class="absolute -bottom-6 -left-6 w-28 h-28 rounded-full bg-sky-400/20 blur-xl"></div>
-          <div class="absolute -top-8 -right-8 w-36 h-36 rounded-full bg-fuchsia-400/20 blur-xl"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="demos" class="max-w-6xl mx-auto px-6 pb-16">
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a href="demo1-hero-parallax/index.html" class="card group rounded-2xl glass border border-white/10 p-5 block focus:outline-none focus:ring-2 focus:ring-sky-400">
-        <div class="text-xs uppercase tracking-wide text-slate-400">Demo 01</div>
-        <h3 class="mt-2 font-semibold text-lg group-hover:text-white">Hero Parallax</h3>
-        <p class="mt-1 text-sm text-slate-300">ScrollTrigger layers with reduced-motion fallback.</p>
-        <div class="mt-4 flex gap-2 text-[11px] text-slate-300"><span class="px-2 py-1 rounded-full bg-white/10">ScrollTrigger</span><span class="px-2 py-1 rounded-full bg-white/10">Parallax</span></div>
-      </a>
-      <a href="demo2-section-transitions/index.html" class="card group rounded-2xl glass border border-white/10 p-5 block focus:outline-none focus:ring-2 focus:ring-sky-400">
-        <div class="text-xs uppercase tracking-wide text-slate-400">Demo 02</div>
-        <h3 class="mt-2 font-semibold text-lg group-hover:text-white">Section Transitions</h3>
-        <p class="mt-1 text-sm text-slate-300">Pinned panels, snap scrolling, transform-only reveals.</p>
-        <div class="mt-4 flex gap-2 text-[11px] text-slate-300"><span class="px-2 py-1 rounded-full bg-white/10">Snap</span><span class="px-2 py-1 rounded-full bg-white/10">Pinned</span></div>
-      </a>
-      <a href="demo3-ui-microinteractions/index.html" class="card group rounded-2xl glass border border-white/10 p-5 block focus:outline-none focus:ring-2 focus:ring-sky-400">
-        <div class="text-xs uppercase tracking-wide text-slate-400">Demo 03</div>
-        <h3 class="mt-2 font-semibold text-lg group-hover:text-white">UI Micro-interactions</h3>
-        <p class="mt-1 text-sm text-slate-300">Menu timeline, hover/focus lift, CTA ripple.</p>
-        <div class="mt-4 flex gap-2 text-[11px] text-slate-300"><span class="px-2 py-1 rounded-full bg-white/10">Buttons</span><span class="px-2 py-1 rounded-full bg-white/10">Cards</span></div>
-      </a>
-      <a href="demo4-swup-page-transition/index.html" class="card group rounded-2xl glass border border-white/10 p-5 block focus:outline-none focus:ring-2 focus:ring-sky-400">
-        <div class="text-xs uppercase tracking-wide text-slate-400">Demo 04</div>
-        <h3 class="mt-2 font-semibold text-lg group-hover:text-white">Swup Page Transition</h3>
-        <p class="mt-1 text-sm text-slate-300">Overlay in/out between pages with GSAP.</p>
-        <div class="mt-4 flex gap-2 text-[11px] text-slate-300"><span class="px-2 py-1 rounded-full bg-white/10">Swup</span><span class="px-2 py-1 rounded-full bg-white/10">Overlay</span></div>
-      </a>
-    </div>
-  </section>
-
-  <footer class="max-w-6xl mx-auto px-6 pb-10 text-sm text-slate-400">
-    <div class="border-t border-white/10 pt-6 flex flex-wrap items-center justify-between gap-4">
-      <p>© <span id="y"></span> Anna Mkrtumyan — MIT</p>
-      <div class="flex items-center gap-4">
-        <a class="hover:text-white" href="YOUR_LINKEDIN_URL" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="hover:text-white" href="mailto:YOUR_EMAIL">Contact</a>
-      </div>
-    </div>
-  </footer>
-
-<script>
-  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  document.getElementById('y').textContent = new Date().getFullYear();
-  if(!reduced){
-    gsap.set('.hero-title', { y: 16, opacity: 0 });
-    gsap.set('.hero-sub', { y: 14, opacity: 0 });
-    gsap.set('.card', { y: 16, opacity: 0 });
-    const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-    tl.to('.hero-title', { y: 0, opacity: 1, duration: .7 })
-      .to('.hero-sub', { y: 0, opacity: 1, duration: .6 }, '-=.3')
-      .to('.card', { y: 0, opacity: 1, duration: .6, stagger: .08 }, '-=.2');
-  }
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna Mkrtumyan — Motion-first Front-end</title>
+    <meta name="description" content="Portfolio of Anna Mkrtumyan — motion-first front-end engineer. GSAP, ScrollTrigger, Swup, accessibility-first animations, and high-performance UX." />
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body class="bg-ink text-slate-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
