@@ -65,66 +65,66 @@
   },
   {
     "question": "Ով է Աննա Մկրտումյանը?",
-    "answer": "Front‑end ծրագրավորող Երևանից՝ փորձով Angular (12–15+), React, TypeScript տեխնոլոգիաներով, կենտրոնացած մոդուլային UI ինժեներիայի վրա."
+    "answer": "Front‑end ծրագրավորող Երևանից՝ փորձով Angular (12–15+), React, TypeScript տեխնոլոգիաներով, կենտրոնացած մոդուլային UI ինժեներիայի վրա։"
   },
   {
-    "question": "Աննայի ներկայիս աշխատանքը ո՞րն է:",
-    "answer": "Software Engineer Datanect ընկերությունում (2021 դեկտեմբերից՝ մինչ այժմ). Զարգացնում է բարդ front‑end ինտերֆեյսներ և ղեկավարում UI/UX refactor-ներ."
+    "question": "Աննայի ներկայիս աշխատանքը ո՞րն է",
+    "answer": "Software Engineer Datanect ընկերությունում (2021 դեկտեմբերից՝ մինչ այժմ). Զարգացնում է բարդ front‑end ինտերֆեյսներ և ղեկավարում UI/UX refactor-ներ։"
   },
   {
-    "question": "Աննան ինչ cloud/AI ծառայություններ է ինտեգրեցրել?",
-    "answer": "AWS Cognito, Lambda, CloudWatch, CodeBuild, Amazon Connect Streams, Amazon Chat.js, ինչպես նաև AWS Bedrock՝ conversational AI-ի համար."
+    "question": "Աննան ինչ cloud կամ AI ծառայություններ է ինտեգրել",
+    "answer": "AWS Cognito, Lambda, CloudWatch, CodeBuild, Amazon Connect Streams, Amazon Chat.js, ինչպես նաև AWS Bedrock՝ conversational AI-ի համար։"
   },
   {
-    "question": "Ինչ custom լուծում է պատրաստել Աննան Amazon Connect-ի համար?",
-    "answer": "Սեփական JavaScript plugin՝ իրական ժամանակում call-ի իրադարձությունները ընթերցելու համար (Amazon Connect Streams)."
+    "question": "Ի՞նչ custom լուծում է պատրաստել Աննան Amazon Connect-ի համար",
+    "answer": "Սեփական JavaScript plugin՝ իրական ժամանակում call-ի իրադարձությունները ընթերցելու համար (Amazon Connect Streams)։"
   },
   {
-    "question": "Ունե՞ցել է Աննան conversational AI փորձ:",
-    "answer": "Այո, ինտեգրել է AWS Bedrock‑ով և Amazon Chat.js‑ով."
+    "question": "Ունե՞ցել է Աննան conversational AI փորձ",
+    "answer": "Այո, ինտեգրել է AWS Bedrock‑ով և Amazon Chat.js‑ով։"
   },
   {
-    "question": "Որ framework-ներով է աշխատում Աննան?",
-    "answer": "Angular, TypeScript, NgRx, RxJS, React, Ionic, BackboneJS, jQuery, ինչպես նաև HTML5, CSS3 (Sass, Less)."
+    "question": "Որ framework-ներով է աշխատում Աննան",
+    "answer": "Angular, TypeScript, NgRx, RxJS, React, Ionic, BackboneJS, jQuery, ինչպես նաև HTML5, CSS3 (Sass, Less)։"
   },
   {
-    "question": "Ի՞նչ դիզայն/համագործակցության գործիքներ է օգտագործում Աննան:",
-    "answer": "Figma, Adobe XD/Photoshop/Illustrator, Jira, Trello, Bitbucket, Git."
+    "question": "Ի՞նչ դիզայն/համագործակցության գործիքներ է օգտագործում Աննան",
+    "answer": "Figma, Adobe XD/Photoshop/Illustrator, Jira, Trello, Bitbucket, Git։"
   },
   {
-    "question": "Ի՞նչ նախագծի վրա է աշխատել Softconstruct-ում:",
-    "answer": "Spring BME iGaming Management Platform — օպերատորների dashboard-ներ և կոնֆիգուրացիոն հոսքեր."
+    "question": "Ի՞նչ նախագծի վրա է աշխատել Softconstruct-ում",
+    "answer": "Spring BME iGaming Management Platform — օպերատորների dashboard-ներ և կոնֆիգուրացիոն հոսքեր։"
   },
   {
-    "question": "Արդյո՞ք ունի 3D / Three.js փորձ:",
-    "answer": "Այո — Three.js‑ով կառուցել է ինտերակտիվ 3D մոդելներ օդափոխիչ սարքերի համար՝ պտտում, զննում, չափումների ցուցիչներ."
+    "question": "Արդյո՞ք ունի 3D / Three.js փորձ",
+    "answer": "Այո — Three.js‑ով կառուցել է ինտերակտիվ 3D մոդելներ օդափոխիչ սարքերի համար՝ պտտում, զննում, չափումների ցուցիչներ։"
   },
   {
-    "question": "Արդյո՞ք աշխատել է CI/CD-ով:",
-    "answer": "Այո — AWS CodeBuild և հարակից ծառայություններ."
+    "question": "Արդյո՞ք աշխատել է CI/CD-ով",
+    "answer": "Այո — AWS CodeBuild և հարակից ծառայություններ։"
   },
   {
-    "question": "Որտե՞ղ է բնակվում:",
-    "answer": "Երևան, Հայաստան."
+    "question": "Որտե՞ղ է բնակվում",
+    "answer": "Երևան, Հայաստան։"
   },
   {
-    "question": "Կրթությունն ի՞նչ է:",
-    "answer": "Բակալավր՝ Ինֆորմատիկա և կիրառական մաթեմատիկա, ԵՊՀ (2012–2016); «ArmSoft» ծրագրավորման դասընթաց (2013)."
+    "question": "Կրթությունն ի՞նչ է",
+    "answer": "Բակալավր՝ Ինֆորմատիկա և կիրառական մաթեմատիկա, ԵՊՀ (2012–2016); «ArmSoft» ծրագրավորման դասընթաց (2013)։"
   },
   {
-    "question": "Ի՞նչ էին համալսարանական նախագծերը:",
-    "answer": "OpenCV՝ դեմքի/ժպիտի հայտնաբերում (C++), և Դեյկստրա ալգորիթմ՝ Qt-ով."
+    "question": "Ի՞նչ էին համալսարանական նախագծերը",
+    "answer": "OpenCV՝ դեմքի/ժպիտի հայտնաբերում (C++), և Դեյկստրա ալգորիթմ՝ Qt-ով։"
   },
   {
-    "question": "Ի՞նչ լեզուներ է տիրապետում:",
-    "answer": "Հայերեն (մայրենի), Ռուսերեն (C2), Անգլերեն (B1–B2)."
+    "question": "Ի՞նչ լեզուներ է տիրապետում",
+    "answer": "Հայերեն (մայրենի), Ռուսերեն (C2), Անգլերեն (B1–B2)։"
   },
   {
-    "question": "Ինչպե՞ս կարող եմ կապ հաստատել Աննայի հետ:",
+    "question": "Ինչպե՞ս կապել Աննայի հետ",
     "answer": "Email — annmkrtumyan@gmail.com, LinkedIn — linkedin.com/in/anna-mkrtumyan-717453159"
   },
   {
-    "question": "Որ ընկերություններում է աշխատել Աննան:",
-    "answer": "Datanect, Softconstruct, Kinetix, Webassistant (նշված տարիներով)."
+    "question": "Որ ընկերություններում է աշխատել Աննան",
+    "answer": "Datanect, Softconstruct, Kinetix, Webassistant (նշված տարիներով)։"
   }
 ]

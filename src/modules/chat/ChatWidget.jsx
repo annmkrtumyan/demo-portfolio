@@ -1,14 +1,23 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react'
+
+import React, { useEffect, useRef, useState } from 'react'
 import kbData from './kb.json'
 import { rankAnswers } from './fuzzy'
 
 const FN_PATH = '/api/chat'
-const isHy = (s) => /[\u0531-\u058F]/.test(s); // Armenian letters
+const isHy = (s) => /[\u0531-\u058F]/.test(s)
+
+function getLocalFacts(){
+  try { return JSON.parse(localStorage.getItem('anna_kb_extra') || '[]') } catch { return [] }
+}
+function saveLocalFact(q, a){
+  const arr = getLocalFacts(); arr.unshift({ question: q, answer: a }); localStorage.setItem('anna_kb_extra', JSON.stringify(arr))
+}
+function getMergedFacts(){ return [...kbData, ...getLocalFacts()] }
 
 export default function ChatWidget(){
   const [open, setOpen] = useState(false)
   const [messages, setMessages] = useState([
-    { role: 'assistant', content: 'Բարև։ Ես Աննայի պորտֆոլիո բոտն եմ։ Հարցրու որևէ բան Աննայի փորձի, հմտությունների կամ նախագծերի մասին։' }
+    { role: 'assistant', content: 'Բարև / Hi! Ես Աննայի պորտֆոլիո-բոտն եմ։ Կարող ես հարցնել հմտությունների, փորձի, նախագծերի կամ demo-ների մասին.' }
   ])
   const [input, setInput] = useState('')
   const listRef = useRef(null)
@@ -16,40 +25,41 @@ export default function ChatWidget(){
   useEffect(() => { listRef.current?.scrollTo(0, listRef.current.scrollHeight) }, [messages])
 
   async function send(){
-    const text = input.trim()
-    if(!text) return
+    const text = input.trim(); if(!text) return
     const userMsg = { role: 'user', content: text }
-    setMessages(m => [...m, userMsg])
-    setInput('')
+    setMessages(m => [...m, userMsg]); setInput('')
 
-    // Try online first, else fallback to offline KB
+    // Try online first
     try {
       const res = await fetch(FN_PATH, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({
-          messages: [...messages, userMsg],
-          kb: getMergedFacts(),
-          langHint: isHy(text) ? 'hy' : 'en'
-        })
+        body: JSON.stringify({ messages: [...messages, userMsg], kb: getMergedFacts(), langHint: isHy(text) ? 'hy' : 'en' })
       })
       if(!res.ok) throw new Error('offline')
       const data = await res.json()
       setMessages(m => [...m, { role: 'assistant', content: data.answer }])
-    } catch {
-      const best = rankAnswers(text, kbData.concat(getLocalFacts()))
-      const answer = best?.answer || "Չեմ գտնում այդ մասին իմ գիտելիքներում։ Կարամ պատմել Աննայի հմտությունների, գործիքների, փորձի ու demo-ների մասին։"
-      setMessages(m => [...m, { role: 'assistant', content: answer }])
+      return
+    } catch (e) {
+      // fall through to offline
     }
-  }
 
-  function getLocalFacts(){
-    try { return JSON.parse(localStorage.getItem('anna_kb_extra') || '[]') } catch { return [] }
+    // OFFLINE: keyword route first (skills), then fuzzy
+    const facts = getMergedFacts()
+    const q = text.toLowerCase()
+    if (/(skills?|stack|tools?|հմտ|գիտելիք|ստեկ)/i.test(q)) {
+      const hit = facts.find(p => /skills|հմտ/i.test(p.question))
+      if (hit) {
+        setMessages(m => [...m, { role: 'assistant', content: hit.answer }])
+        return
+      }
+    }
+    const best = rankAnswers(text, facts)
+    const answer = best?.answer || (isHy(q)
+      ? "Չգտա համապատասխան փաստ իմ տեղական բազայում։ Կարող եմ պատմել հմտությունների, փորձի կամ նախագծերի մասին."
+      : "I couldn't find a matching fact offline. I can tell you about skills, experience or projects.")
+    setMessages(m => [...m, { role: 'assistant', content: answer }])
   }
-  function saveLocalFact(q, a){
-    const arr = getLocalFacts(); arr.unshift({ question: q, answer: a }); localStorage.setItem('anna_kb_extra', JSON.stringify(arr))
-  }
-  function getMergedFacts(){ return [...kbData, ...getLocalFacts()] }
 
   return (
     <>
