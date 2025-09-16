@@ -55,7 +55,7 @@ function Footer(){
         <p>© {new Date().getFullYear()} Anna Mkrtumyan — MIT</p>
         <div className="flex items-center gap-4">
           <a className="hover:text-white" href="https://portfolio-anna-mkrtumyan.netlify.app/" target="_blank" rel="noreferrer">Portfolio</a>
-          <a className="hover:text-white" href="mailto:YOUR_EMAIL">Contact</a>
+          <a className="hover:text-white" href="mailto:annmkrtumyan@gmail.com">Contact</a>
         </div>
       </div>
     </footer>
